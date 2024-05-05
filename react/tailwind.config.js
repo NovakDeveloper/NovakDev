@@ -22,7 +22,7 @@ export default {
       colors: {
         'almost-white': '#FEFFFF',
         'light-green': '#DEF2F1',
-        'green': '#DEF2F1',
+        'green': '#33AAAA',
         'dark-green': '#2B7A78',
         'almost-black': '#17252A',
       },
@@ -32,7 +32,7 @@ export default {
           fontWeight: '600',
           letterSpacing: '-0.008em'
         }],
-        'h1-mobile': ['3rem', {
+        'h1-mobile': ['2.5rem', {
           lineHeight: '120%',
           fontWeight: '600',
           letterSpacing: '-0.008em'

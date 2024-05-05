@@ -4,6 +4,8 @@ import AboutMe from './components/AboutMe'
 import ProfessionalPath from "./components/ProfessionalPath";
 import Navbar from './components/Navbar'
 import Home from './components/Home'
+import Portfolio from './components/Portfolio';
+import Contact from "./components/Contact";
 function App() {
   return (
     <div className='page flex overflow-hidden'>
@@ -12,6 +14,8 @@ function App() {
       <Home />
       <AboutMe />
       <ProfessionalPath />
+      <Portfolio />
+      <Contact />
     </div>
     </div>
   )

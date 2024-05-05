@@ -3,10 +3,10 @@ import Timeline from './Timeline';
 
 const Timelines = () => {
   return (
-      <div className={`timelines`}>
-         <Timeline year={'2020-2022'} description="Обучение в ТТХК"/>
-         <Timeline year={'2021-2022'} description="Практика в veebi.ee"/>
-         <Timeline year={'2022 - current'} description="Работа в Амандус"/>
+      <div className={`timelines md:min-w-1/2 md:w-1/2 text-left mx-auto gap-16 flex flex-col`}>
+         <Timeline year={'2022 - current'} description="👩‍💻 Employment at Amandus Communication" position="Web Developer"/>
+         <Timeline year={'2021-2022'} description="👩‍🎓 Internship at Digital Agency Veebi" position="Wordpress/Front-End Developer" />
+         <Timeline year={'2020-2022'} description="👩‍🎓 Education at Tallinn Industrial Education Centre" position="Software Engineer"/>
       </div>
   );
 };

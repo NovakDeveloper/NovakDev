@@ -4,12 +4,11 @@ import CertificationCard from './CertificationCard';
 const Certifications = ({src, title, ratio, height = 'auto', width = 'auto', objectFit = 'cover', customClasses, caption }) => {
   return (
       <div className={`certifications w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4`}>
-         <CertificationCard src={'src/images/PHP-Certification.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} title="PHP for Beginners" caption={'test'} />
-         <CertificationCard src={'src/images/PHP-Certification.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} title="PHP for Beginners" caption={'test'} />
-         <CertificationCard src={'src/images/PHP-Certification.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} title="PHP for Beginners" caption={'test'} />
-         <CertificationCard src={'src/images/PHP-Certification.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} title="PHP for Beginners" caption={'test'} />
-         <CertificationCard src={'src/images/PHP-Certification.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} title="PHP for Beginners" caption={'test'} />
-         <CertificationCard src={'src/images/PHP-Certification.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} title="PHP for Beginners" caption={'test'} />
+          <CertificationCard src={'src/images/certifications/Figma.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"Figma, UI/UX Design"} />
+          <CertificationCard src={'src/images/certifications/Wordpress.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"PHP, Wordpress, SQL"}/>
+          <CertificationCard src={'src/images/certifications/CMS.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"PHP, CMS, SQL"}/>
+          <CertificationCard src={'src/images/certifications/Tailwind.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"CSS Framework: Tailwind"}/>
+          <CertificationCard src={'src/images/certifications/Sass.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"Sass, SCSS"}/>
       </div>
   );
 };

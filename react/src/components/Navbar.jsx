@@ -13,9 +13,9 @@ const Navbar = () => {
         <div className="buttons flex flex-col gap-4">
          <MenuButton link="#home" type="nav-button" text="Home"/>
          <MenuButton link="#about-me" type="nav-button" text="About me"/>
-         <MenuButton link="#education" type="nav-button" text="Professional path"/>
+         <MenuButton link="#professional-path" type="nav-button" text="Professional path"/>
          <MenuButton link="#portfolio" type="nav-button" text="Portfolio"/>
-         <MenuButton link="#contact" type="nav-button" text="Contact me"/>
+         <MenuButton link="#contact-me" type="nav-button" text="Contact me"/>
         </div>
       </div>
     </div>
