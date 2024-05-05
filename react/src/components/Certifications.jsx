@@ -1,9 +1,9 @@
 import React from 'react';
 import CertificationCard from './CertificationCard';
 
-const Certifications = ({src, title, ratio, height = 'auto', width = 'auto', objectFit = 'cover', customClasses, caption }) => {
+const Certifications = () => {
   return (
-      <div className={`certifications w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4`}>
+      <div className={`certifications w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3`}>
           <CertificationCard src={'src/images/certifications/Figma.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"Figma, UI/UX Design"} />
           <CertificationCard src={'src/images/certifications/Wordpress.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"PHP, Wordpress, SQL"}/>
           <CertificationCard src={'src/images/certifications/CMS.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"PHP, CMS, SQL"}/>

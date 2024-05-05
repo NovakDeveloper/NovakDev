@@ -19,7 +19,7 @@ const DownloadButton = ({ fileName, fileUrl }) => {
     };
   
     return (
-      <button className="bg-almost-black text-white text-center py-2 px-4 rounded-full w-full block tracking-wider border-almost-black border hover:bg-almost-white hover:text-almost-black cursor-pointer w-max text-[0.85rem] mt-2 md:-mt-4" onClick={handleDownload}>Download {fileName}</button>
+      <button className="bg-almost-black text-white text-center py-2 px-4 rounded-full leading-4 w-full block tracking-wider border-almost-black border hover:bg-almost-white hover:text-almost-black cursor-pointer w-max text-[0.85rem] mt-2" onClick={handleDownload}>Download {fileName}</button>
     );
   };
   

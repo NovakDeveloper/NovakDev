@@ -30,7 +30,7 @@ const PrevButton = ({ link, text }) => {
   };
   return (
     <a 
-      className="prev-button flex flex-row-reverse gap-4 justify-end px-16 py-8 items-center w-full text-3xl text-dark-green mt-auto" 
+      className="prev-button flex flex-row-reverse gap-4 justify-end px-16 py-8 items-center w-full full text-2xl xxl:text-3xl text-dark-green mt-auto" 
       href={link}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

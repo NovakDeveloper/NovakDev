@@ -24,16 +24,8 @@ const Home = () => {
         <div ref={introRef} className="intro text-center py-8 md:w-3/4 flex flex-col items-center justify-center flex-1">
           <Photo customClasses={'w-[50%] mb-4 md:hidden'}/>
             <h1 className='text-h1-mobile md:text-h1 mb-8'>Hey!  I am <span className='text-dark-green font-bold'>Valeria Novak</span>. 👋</h1>
-            <p className="text-x-large xxl:text-[1.875rem] leading-14"><span className='text-dark-green font-medium'>Welcome to my digital realm</span>, where creativity meets craftsmanship and innovation knows no bounds.<br />
-            <span className='text-dark-green font-medium'>As a dedicated Web Developer</span>, I invite you to explore the boundless possibilities of the online world through my lens.</p>
-        </div>
-        <div ref={latestProjects}  className='latest-projects w-full flex-1 xxl:min-w-3/4 xxl:w-3/4'>
-            <h1 className='text-h1-mobile md:text-h1 text-center mb-8'><span className='text-dark-green'>L</span>atest <span className='text-dark-green'>C</span>ertifications</h1>
-            <div className='projects flex flex-col sm:flex-row w-full gap-4'>
-              <CertificationCard src={'src/images/certifications/Figma.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"Figma, UI/UX Design"} />
-              <CertificationCard src={'src/images/certifications/Wordpress.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"PHP, Wordpress, SQL"}/>
-              <CertificationCard src={'src/images/certifications/CMS.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"PHP, CMS, SQL"}/>
-            </div>
+            <p className="text-x-large xxl:text-[1.875rem] leading-14"><span className='text-dark-green font-medium'>Welcome to my digital realm</span>, where creativity meets craftsmanship and innovation knows no bounds.</p><br />
+            <p className="text-x-large xxl:text-[1.875rem] leading-14"><span className='text-dark-green font-medium'>As a dedicated Web Developer</span>, I invite you to explore the boundless possibilities of the online world through my lens.</p>
         </div>
         <div className="max-md:hidden flex mt-auto w-full">
             <NextButton text="About me" link="#about-me" />
