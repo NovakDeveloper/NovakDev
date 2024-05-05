@@ -6,7 +6,7 @@ import Certifications from './Certifications';
 import Timelines from './Timelines';
 
 const ProfessionalPath = () => {
-  const [selectedButton, setSelectedButton] = useState(null);
+  const [selectedButton, setSelectedButton] = useState("Study/Work");
 
   const handleButtonClick = (buttonText) => {
     setSelectedButton(buttonText);
