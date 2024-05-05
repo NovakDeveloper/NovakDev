@@ -13,8 +13,8 @@ const ProfessionalPath = () => {
     // Дополнительные действия, если необходимо
   };
   return ( 
-    <div className='h-full min-w-full w-full flex justify-start items-center m-auto flex-col' id="professional-path">
-            <div className="wrapper md:min-w-3/4 md:w-3/4 text-center flex-1 flex items-center">
+    <div className='section h-full min-w-full w-full flex justify-start items-center m-auto flex-col' id="professional-path">
+            <div className="wrapper md:min-w-full md:w-full text-center flex-1 flex items-center px-8">
             <div className="content w-full h-full">
             <div className='top-part h-[40%] flex flex-col justify-end'>
               <h1 className='text-h1-mobile md:text-h1 mb-8'><span className='text-dark-green font-medium'>P</span>rofessional <span className='text-dark-green font-medium'>P</span>ath</h1>
