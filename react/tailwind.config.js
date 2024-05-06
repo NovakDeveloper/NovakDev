@@ -15,9 +15,18 @@ export default {
         '1/2': '50%',
         '3/4': '75%',
         'full': '100%',
+        'full-with-padding': 'calc(100% - 6rem)'
+      },
+      width: {
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        'full': '100%',
+        'full-with-padding': 'calc(100% - 6rem)'
       },
       height: {
         '1px': '1',
+        'full-with-padding': 'calc(100% - 6rem)'
       },
       colors: {
         'almost-white': '#FEFFFF',
@@ -25,6 +34,7 @@ export default {
         'green': '#33AAAA',
         'dark-green': '#2B7A78',
         'almost-black': '#17252A',
+        'opacity-black': 'rgba(0, 0, 0, 0.1)'
       },
       fontSize: {
         'h1': ['3.75rem', {

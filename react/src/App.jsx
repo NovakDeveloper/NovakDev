@@ -10,7 +10,7 @@ function App() {
   return (
     <div className='page flex overflow-hidden'>
     <Navbar/>
-    <div className={`sections w-full md:h-screen flex flex-col overflow-auto md:flex-row transition-all duration-1000 ease-out ml-auto md:min-w-3/4 md:w-3/4 xxl:min-w-[85%] xxl:w-[85%]`}>
+    <div className={`sections w-full md:h-screen flex flex-col overflow-hidden md:flex-row transition-all duration-1000 ease-out ml-auto md:min-w-3/4 md:w-3/4 xxl:min-w-[85%] xxl:w-[85%]`}>
       <Home />
       <AboutMe />
       <ProfessionalPath />

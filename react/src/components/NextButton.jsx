@@ -44,7 +44,7 @@ const NextButton = ({ link, text }) => {
         viewBox="0 0 40 40" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
-        className="arrow-with-animation"
+        className="arrow-with-animation max-xxl:w-[28px] max-xxl:h-[28px]"
       >
         <path d="M1.66669 19.9916H36.4584" stroke="#2B7A78" strokeWidth="2"/>
         <path d="M19.0634 37.3933L36.4584 20L19.0634 2.60498" stroke="#2B7A78" strokeWidth="2"/>

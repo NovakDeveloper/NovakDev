@@ -10,10 +10,9 @@ import Skills from './Skills';
 const ProfessionalPath = () => {
   const [selectedButton, setSelectedButton] = useState("Education/Work");
 
-  const handleButtonClick = (buttonText) => {
-    setSelectedButton(buttonText);
-    // Дополнительные действия, если необходимо
-  };
+const handleButtonClick = (buttonText) => {
+  setSelectedButton(buttonText);
+};
   return ( 
     <div className='section h-full min-w-full w-full flex justify-start items-center m-auto flex-col px-4 md:px-8 max-md:pb-8 max-md:mb-8' id="professional-path">
             <div className="wrapper md:min-w-full md:w-full text-center flex-1 flex items-center">
