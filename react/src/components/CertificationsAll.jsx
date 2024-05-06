@@ -23,13 +23,13 @@ const CertificationsAll = () => {
 
   return (
     <div className='fixed top-0 left-0 w-full h-full p-16 z-10 bg-opacity-black' ref={certificationsRef}>
-      <div className='wrapper bg-almost-white border border-dark-green rounded h-full overflow-hidden p-8'>
-      <div className='flex items-center max-md:flex-col justify-center md:gap-4 mb-8'>
+      <div className='wrapper bg-almost-white border border-dark-green rounded h-full overflow-hidden flex flex-col'>
+      <div className='flex items-center max-md:flex-col justify-center md:gap-4 p-8'>
         <h1 className='text-mobile-h1 md:text-h1'>All certifications</h1>                
       </div>
-      <p className='mb-4'>Here, you can explore all the certifications I have acquired throughout my professional journey.</p>
-      <div className={`wrapper`}>
-      <div className={`certifications w-full grid gap-4 sm:grid-cols-2 md:grid-cols-4`}>
+      <p className='text-x-large'>Here, you can explore all the certifications I have acquired throughout my professional journey.</p>
+      <div className={`wrapper h-full relative overflow-auto`}>
+      <div className={`certifications w-full grid gap-4 sm:grid-cols-2 md:grid-cols-4 absolute top-0 left-0 p-8`}>
           <CertificationCard src={'src/images/certifications/Figma.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"Figma, UI/UX Design"} />
           <CertificationCard src={'src/images/certifications/Wordpress.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"PHP, Wordpress, SQL"}/>
           <CertificationCard src={'src/images/certifications/CMS.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"PHP, CMS, SQL"}/>
