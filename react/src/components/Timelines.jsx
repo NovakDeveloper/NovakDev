@@ -4,8 +4,8 @@ import Timeline from './Timeline';
 const Timelines = () => {
   return (
     <>
-    <h2 className='text-mobile-h2 md:text-h2'>History</h2>                
-        <p className='mb-4'>Here, you can explore last 3 certifications I have acquired throughout my professional journey. Click to "All certifications" to see all certifications that I have</p>
+    <h2 className='text-mobile-h2 md:text-h2 mb-4'>History</h2>                
+        <p className='mb-4 xxl:text-[1.85rem]'>Step into my journey through the realms of learning and work, where each experience has been a stepping stone towards excellence.</p>
     
       <div className={`timelines text-left gap-8 flex flex-col`}>
          <Timeline year={'2022 - current'} description="👩‍💻 Employment at Amandus Communication" position="Web Developer"/>

@@ -4,7 +4,7 @@ import Skill from './Skill';
 const Skills = () => {
   return (
     <>
-     <h2 className='text-mobile-h2 md:text-h2'>All skills</h2>                
+     <h2 className='text-mobile-h2 md:text-h2 mb-4'>All skills</h2>                
         <p className='mb-4'>Here, you can explore last 3 certifications I have acquired throughout my professional journey. Click to "All certifications" to see all certifications that I have</p>
       <div className={`skills grid grid-cols-8 mb-4`}>
             <Skill title="HTML" src="src/images/skills/html.svg" />
