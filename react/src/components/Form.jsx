@@ -24,13 +24,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='w-3/4 m-auto'>
+    <div className='md:w-3/4 m-auto'>
     <p className='mb-8'>Ready to turn ideas into reality? Let's collaborate and bring your vision to life. Contact me today to discuss your project and take the first step towards success.</p>
     <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4">
-      <div className="col-span-1">
+      <div className="col-span-2 md:col-span-1">
         <input type="text" placeholder='Name' id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green" />
       </div>
-      <div className="col-span-1">
+      <div className="col-span-2 md:col-span-1">
         <input placeholder='E-mail' type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green" />
       </div>
       <div className="col-span-2">
