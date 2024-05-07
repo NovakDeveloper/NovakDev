@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import NextButton from './NextButton';
 import PrevButton from './PrevButton';
 import Button from './Button';
-import Certifications from './Certifications';
+import Projects from './Projects';
 import Timelines from './Timelines';
 
 const Portfolio = () => {
@@ -15,7 +15,7 @@ const Portfolio = () => {
               <h1 className='text-h1-mobile md:text-h1 mb-8'><span className='text-dark-green font-medium'>P</span>ortfolio</h1>
             </div>
             <div className='bottom-part md:h-[75%]'>
-              <Certifications />
+              <Projects />
             </div>
             </div>
             </div>
