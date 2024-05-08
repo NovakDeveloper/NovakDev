@@ -25,7 +25,7 @@ const handleButtonClick = (buttonText) => {
                 <Button text="Certifications" onClick={() => handleButtonClick("Certifications")} active={selectedButton === "Certifications"} />
                 <Button text="Skills" onClick={() => handleButtonClick("Skills")} active={selectedButton === "Skills"} />
               </div>
-            <div className='bottom-part md:h-[75%] md:w-3/4 m-auto'>
+            <div className='bottom-part md:h-[75%]'>
               {selectedButton === "Education/Work" && <Timelines />}
               {selectedButton === "Certifications" && <Certifications />}
               {selectedButton === "Skills" && <Skills />}

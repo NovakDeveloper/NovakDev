@@ -50,3 +50,10 @@ html {
   left: 0;
   top: 5px;
 }
+.contain {
+  object-fit: contain;
+}
+.project img {
+  width: calc(100% - 4rem);
+  margin-left: 2rem;
+}

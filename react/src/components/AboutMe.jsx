@@ -27,7 +27,7 @@ const AboutMe = () => {
             <div className='bottom-part md:h-[75%] text-x-large xxl:text-[1.875rem] leading-14'>
               <p>I am an Estonian Developer 🇪🇪 from the beautiful city of Tallinn, a place that inspires me to explore new possibilities and achievements. 🚀</p>
               <br />
-              <p>I am fluent in three languages: English, Estonian, and Russian, allowing me to communicate and collaborate easily in a multinational environment.</p>
+              <p>I am proficient in three languages: English, Estonian, and Russian, allowing me to communicate and collaborate easily in a multinational environment.</p>
               <br />
               <p>In the <a className="text-dark-green underline" onClick={handleButtonClick} href="#professional-path">Professional Path tab</a>, you'll discover my journey, achievements, certifications and skills accumulated over years of work and education in the field of information technology.</p>
               <br />
