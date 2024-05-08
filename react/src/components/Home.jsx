@@ -2,22 +2,14 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import NextButton from './NextButton';
 import Photo from './Photo';
-import CertificationCard from './CertificationCard';
 
 
 const Home = () => {
   const introRef = useRef(null);
-  const latestProjects = useRef(null);
   useEffect(() => {
     const introElement = introRef.current;
-    const latestProjectsElement = latestProjects.current;
-    // Устанавливаем начальную прозрачность для .intro
     gsap.set(introElement, { opacity: 0 });
-    gsap.set(latestProjectsElement, { opacity: 0 });
-
-    // Показываем .intro через 1 секунду
     gsap.to(introElement, { opacity: 1, duration: 2, delay: 0.5 });
-    gsap.to(latestProjectsElement, { opacity: 1, duration: 2, delay: 1.5 });
   }, []);
   return ( 
     <div className='h-full min-w-full w-full flex justify-start items-center m-auto flex-col px-4 md:px-8 max-md:pb-8 max-md:mb-8' id="home">
