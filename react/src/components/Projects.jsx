@@ -15,7 +15,7 @@ const Projects = () => {
           <h2 className='text-mobile-h2 md:text-h2'><span className="text-dark-green">L</span>atest <span className="text-dark-green">P</span>rojects</h2>                
           <Button text="All projects" onClick={handleButtonClick} customClasses={'text-[0.75rem]'} />
               </div>
-      <p className='mb-4'>Here you can explore my latest projects that I've been working on.<br />
+      <p className='mb-4'>Here, you can explore my most recent projects, where I've primarily contributed as a frontend developer.<br />
       Click on 'All Projects' to explore the full range of projects.</p>
       <div className={`projects w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3`}>
           <ProjectCard src={'src/images/projects/addnode.png'} objectFit={'contain'} customClasses={'ratio-video'} name="Addnode Group" link="https://addnodegroup.com/" />

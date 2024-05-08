@@ -1,43 +1,42 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
-  });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
+  const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Добавьте здесь код для отправки данных формы
-    console.log(formData);
-  };
 
+    emailjs
+      .sendForm('service_ytrx4a7', 'template_2oo1cno', form.current, {
+        publicKey: 'y7s3YQZdaDsNZF0Ge',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          form.current.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <div className='md:w-3/4 m-auto'>
     <p className='mb-8'>Ready to turn ideas into reality? Let's collaborate and bring your vision to life. Contact me today to discuss your project and take the first step towards success.</p>
-    <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4">
+    <form ref={form} onSubmit={sendEmail} className="grid grid-cols-2 gap-4">
       <div className="col-span-2 md:col-span-1">
-        <input type="text" placeholder='Name' id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green" />
+        <input type="text" placeholder='Name' id="name" name="name" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green" />
       </div>
       <div className="col-span-2 md:col-span-1">
-        <input placeholder='E-mail' type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green" />
+        <input placeholder='E-mail' type="email" id="email" name="email" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green" />
       </div>
       <div className="col-span-2">
-        <input placeholder='Subject' type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green" />
+        <input placeholder='Subject' type="text" id="subject" name="subject" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green" />
       </div>
       <div className="col-span-2">
-        <textarea placeholder="Message" id="message" name="message" value={formData.message} onChange={handleChange} rows="6" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green"></textarea>
+        <textarea placeholder="Message" id="message" name="message" rows="6" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green"></textarea>
       </div>
       <div className="col-span-2 flex justify-between items-center">
       <button type="submit" className="bg-almost-black text-white text-center py-2 px-8 rounded-full leading-4 w-full block tracking-wider border-almost-black border hover:bg-almost-white hover:text-almost-black cursor-pointer w-max text-[0.85rem] mt-2">Submit</button>
