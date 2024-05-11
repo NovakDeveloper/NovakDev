@@ -1,30 +1,47 @@
-import React, { useRef } from 'react';
+import React, { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
-
+import FormMessage from './FormMessage';
 const ContactForm = () => {
-
+  const [messageStatus, setMessageStatus] = useState(null);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
+    const name = form.current['name'].value.trim();
+    const email = form.current['email'].value.trim();
+    const subject = form.current['subject'].value.trim();
+    const message = form.current['message'].value.trim();
+    if (!name || !email || !subject || !message) {
+      setMessageStatus(false);
+          setTimeout(() => {
+            setMessageStatus(null);
+          }, 3000);
+      return;
+    } else {
+      emailjs
       .sendForm('service_ytrx4a7', 'template_2oo1cno', form.current, {
         publicKey: 'y7s3YQZdaDsNZF0Ge',
       })
       .then(
         () => {
-          console.log('SUCCESS!');
           form.current.reset();
+          setMessageStatus(true);
+          setTimeout(() => {
+            setMessageStatus(null);
+          }, 3000);
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          setMessageStatus(false);
+          setTimeout(() => {
+            setMessageStatus(null);
+          }, 3000);
         },
       );
+    }
   };
   return (
     <div className='md:w-3/4 m-auto'>
-    <p className='mb-8'>Ready to turn ideas into reality? Let's collaborate and bring your vision to life. Contact me today to discuss your project and take the first step towards success.</p>
+    <p className='mb-8'><span className='text-dark-green font-medium'>Ready to turn ideas into reality?</span> Let's collaborate and bring your vision to life. Contact me today to discuss your project and take the first step towards success.</p>
     <form ref={form} onSubmit={sendEmail} className="grid grid-cols-2 gap-4">
       <div className="col-span-2 md:col-span-1">
         <input type="text" placeholder='Name' id="name" name="name" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green" />
@@ -77,6 +94,8 @@ const ContactForm = () => {
     </div>
       </div>
     </form>
+    {(messageStatus === true) && <FormMessage headline="Success!" message="Message sent! Expect a response within 1-2 hours. 🚀" />}
+    {(messageStatus === false) && <FormMessage headline="Something went wrong... 😔" message="Please check your entered data. All fields must be filled." />}
     </div>
   );
 };
