@@ -1,9 +1,22 @@
-import React, { useRef,useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+import { gsap } from 'gsap';
 import FormMessage from './FormMessage';
+
 const ContactForm = () => {
   const [messageStatus, setMessageStatus] = useState(null);
   const form = useRef();
+  const messageRef = useRef(null);
+
+  useEffect(() => {
+    if (messageStatus !== null) {
+      gsap.to(messageRef.current, { autoAlpha: 1, duration: 0.5 });
+      const timeout = setTimeout(() => {
+        gsap.to(messageRef.current, { autoAlpha: 0, duration: 0.5, onComplete: () => setMessageStatus(null) });
+      }, 2000);
+      return () => clearTimeout(timeout);
+    }
+  }, [messageStatus]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -13,30 +26,21 @@ const ContactForm = () => {
     const message = form.current['message'].value.trim();
     if (!name || !email || !subject || !message) {
       setMessageStatus(false);
-          setTimeout(() => {
-            setMessageStatus(null);
-          }, 3000);
       return;
     } else {
       emailjs
-      .sendForm('service_ytrx4a7', 'template_2oo1cno', form.current, {
-        publicKey: 'y7s3YQZdaDsNZF0Ge',
-      })
-      .then(
-        () => {
-          form.current.reset();
-          setMessageStatus(true);
-          setTimeout(() => {
-            setMessageStatus(null);
-          }, 3000);
-        },
-        (error) => {
-          setMessageStatus(false);
-          setTimeout(() => {
-            setMessageStatus(null);
-          }, 3000);
-        },
-      );
+        .sendForm('service_ytrx4a7', 'template_2oo1cno', form.current, {
+          publicKey: 'y7s3YQZdaDsNZF0Ge',
+        })
+        .then(
+          () => {
+            form.current.reset();
+            setMessageStatus(true);
+          },
+          (error) => {
+            setMessageStatus(false);
+          }
+        );
     }
   };
   return (
@@ -94,8 +98,10 @@ const ContactForm = () => {
     </div>
       </div>
     </form>
+    <div ref={messageRef} className='opacity-0'>
     {(messageStatus === true) && <FormMessage headline="Success!" message="Message sent! Expect a response within 1-2 hours. 🚀" />}
     {(messageStatus === false) && <FormMessage headline="Something went wrong... 😔" message="Please check your entered data. All fields must be filled." />}
+    </div>
     </div>
   );
 };
