@@ -4,7 +4,7 @@ import Skill from './Skill';
 const Skills = () => {
   return (
     <div className='md:w-3/4 mx-auto'>
-     <h2 className='text-mobile-h2 md:text-h2 mb-4'><span className="text-dark-green">A</span>ll <span className="text-dark-green">S</span>kills</h2>                
+     <h2 className='text-h2-mobile md:text-h2 mb-4'><span className="text-dark-green">A</span>ll <span className="text-dark-green">S</span>kills</h2>                
         <p className='mb-8'>Step into the realm of my expertise! Below, you'll find a visual showcase of the diverse languages, frameworks, and tools I've mastered.</p>
       <div className={`skills grid grid-cols-5 mb-6`}>
             <Skill title="HTML" src="src/images/skills/html.svg" />

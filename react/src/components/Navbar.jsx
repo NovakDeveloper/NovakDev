@@ -18,7 +18,7 @@ const Navbar = () => {
          <MenuButton link="#portfolio" type="nav-button" text="Portfolio"/>
          <MenuButton link="#contact-me" type="nav-button" text="Contact me"/>
         </div>
-        <p className='opacity-50 group-hover:opacity-100 transition all ease duration-300 mt-auto'>&copy; {currentDate} NovakDev. All rights reserved.</p>
+        <p className='max-md:hidden opacity-50 group-hover:opacity-100 transition all ease duration-300 mt-auto'>&copy; {currentDate} NovakDev. All rights reserved.</p>
       </div>
     </div>
     </>

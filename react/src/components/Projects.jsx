@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <>
         <div className='flex items-center max-md:flex-col justify-center md:gap-4 mb-8'>
-          <h2 className='text-mobile-h2 md:text-h2'><span className="text-dark-green">L</span>atest <span className="text-dark-green">P</span>rojects</h2>                
+          <h2 className='text-h2-mobile md:text-h2'><span className="text-dark-green">L</span>atest <span className="text-dark-green">P</span>rojects</h2>                
           <Button text="All projects" onClick={handleButtonClick} customClasses={'text-[0.75rem]'} />
               </div>
       <p className='mb-4'>Here, you can explore my most recent projects, where I've primarily contributed as a frontend developer.<br />

@@ -11,7 +11,7 @@ const Certifications = () => {
   return (
     <>
         <div className='flex items-center max-md:flex-col justify-center md:gap-4 mb-8'>
-          <h2 className='text-mobile-h2 md:text-h2'><span className='text-dark-green'>L</span>atest <span className='text-dark-green'>C</span>ertifications</h2>                
+          <h2 className='text-h2-mobile md:text-h2'><span className='text-dark-green'>L</span>atest <span className='text-dark-green'>C</span>ertifications</h2>                
           <Button text="All certifications" onClick={handleButtonClick}  customClasses={'text-[0.75rem]'} />
               </div>
       <p className='mb-4'>Here, you can discover the three latest certifications I've attained on my professional journey.<br /> Click 'All Certifications' to explore my complete certification portfolio.</p>

@@ -57,3 +57,7 @@ html {
   width: calc(100% - 4rem);
   margin-left: 2rem;
 }
+
+.menu-icon .spans span{
+    transition: 0.3s ease all;
+}
