@@ -16,9 +16,9 @@ const Certifications = () => {
               </div>
       <p className='mb-4'>Here, you can discover the three latest certifications I've attained on my professional journey.<br /> Click 'All Certifications' to explore my complete certification portfolio.</p>
       <div className={`certifications w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3`}>
-          <CertificationCard src={'src/images/certifications/Figma.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"Figma, UI/UX Design"} />
-          <CertificationCard src={'src/images/certifications/Wordpress.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"PHP, Wordpress, SQL"}/>
-          <CertificationCard src={'src/images/certifications/CMS.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1'} labels={"PHP, CMS, SQL"}/>
+          <CertificationCard src={'src/images/certifications/Figma.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-md'} labels={"Figma, UI/UX Design"} />
+          <CertificationCard src={'src/images/certifications/Wordpress.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-md'} labels={"PHP, Wordpress, SQL"}/>
+          <CertificationCard src={'src/images/certifications/CMS.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-md'} labels={"PHP, CMS, SQL"}/>
       </div>
       {openAllCertifications && <CertificationsAll openAllCertifications={openAllCertifications} onClick={handleButtonClick}/>}
       </>
