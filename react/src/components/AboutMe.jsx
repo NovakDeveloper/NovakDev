@@ -15,7 +15,7 @@ const AboutMe = () => {
     }
   };
   return ( 
-    <div className='section h-full min-w-full w-full flex justify-start items-center m-auto flex-col px-4 md:px-8 max-md:pb-8 max-md:mb-8' id="about-me">
+    <div className='section h-full min-w-full w-full flex justify-start items-center m-auto flex-col px-4 md:px-8 max-md:py-8 md:min-h-[49rem] max-md:border-y max-md:rounded-3xl max-md:border-dark-green' id="about-me">
             <div className="wrapper md:min-w-3/4 md:w-3/4 text-center flex-1 flex items-center">
             <div className="content w-full h-full">
             <div className='top-part md:h-[25%] flex flex-col justify-end'>

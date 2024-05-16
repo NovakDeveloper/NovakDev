@@ -61,6 +61,6 @@ html {
 .menu-icon .spans span{
     transition: 0.3s ease all;
 }
-.navbar.hidden {
+.nav-open .navbar.hidden {
   display: block !important;
 }

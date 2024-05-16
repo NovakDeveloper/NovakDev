@@ -14,8 +14,8 @@ const handleButtonClick = (buttonText) => {
   setSelectedButton(buttonText);
 };
   return ( 
-    <div className='section h-full min-w-full w-full flex justify-start items-center m-auto flex-col px-4 md:px-8 max-md:pb-8 max-md:mb-8' id="professional-path">
-            <div className="wrapper md:min-w-full md:w-full text-center flex-1 flex items-center">
+    <div className='section h-full min-w-full w-full flex justify-start items-center m-auto flex-col px-4 md:px-8 max-md:py-8 md:min-h-[49rem] max-md:border-y max-md:rounded-3xl max-md:border-dark-green' id="professional-path">
+            <div className="wrapper min-w-full w-full text-center flex-1 flex items-center">
             <div className="content w-full h-full">
             <div className='top-part md:h-[25%] flex flex-col justify-end'>
               <h1 className='text-h1-mobile md:text-h1 mb-8'><span className='text-dark-green font-medium'>P</span>rofessional <span className='text-dark-green font-medium'>P</span>ath</h1>

@@ -15,9 +15,9 @@ function App() {
     // Функция, которая будет вызываться при изменении openMenu
     // Проверяем значение openMenu и добавляем/удаляем класс overflow-hidden у body
     if (openMenu) {
-      document.body.classList.add('overflow-hidden');
+      document.body.classList.add('overflow-hidden', 'open-nav');
     } else {
-      document.body.classList.remove('overflow-hidden');
+      document.body.classList.remove('overflow-hidden', 'open-nav');
     }
 
     // Возвращаем функцию очистки для удаления класса при размонтировании компонента
@@ -30,10 +30,10 @@ function App() {
     setOpenMenu(!openMenu);
   }
   return (
-    <div className='page flex overflow-hidden'>
+    <div className='page flex md:overflow-hidden'>
     <MenuIcon handleMenu={handleMenu} openMenu={openMenu} />
     <Navbar openMenu={openMenu}/>
-    <div className={`sections w-full md:h-screen flex flex-col overflow-hidden md:flex-row transition-all duration-1000 ease-out ml-auto md:min-w-3/4 md:w-3/4 xxl:min-w-[85%] xxl:w-[85%]`}>
+    <div className={`sections w-full md:h-screen flex flex-col gap-4 overflow-hidden md:flex-row transition-all duration-1000 ease-out ml-auto md:min-w-3/4 md:w-3/4 xxl:min-w-[85%] xxl:w-[85%]`}>
       <Home />
       <AboutMe />
       <ProfessionalPath />
