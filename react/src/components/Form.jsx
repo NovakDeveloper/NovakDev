@@ -48,16 +48,16 @@ const ContactForm = () => {
     <p className='mb-8'><span className='text-dark-green font-medium'>Ready to turn ideas into reality?</span> Let's collaborate and bring your vision to life. Contact me today to discuss your project and take the first step towards success.</p>
     <form ref={form} onSubmit={sendEmail} className="grid grid-cols-2 gap-4">
       <div className="col-span-2 md:col-span-1">
-        <input type="text" placeholder='Name' id="name" name="name" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green" />
+        <input type="text" placeholder='Name' id="name" name="name" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green outline-2" />
       </div>
       <div className="col-span-2 md:col-span-1">
-        <input placeholder='E-mail' type="email" id="email" name="email" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green" />
+        <input placeholder='E-mail' type="email" id="email" name="email" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green outline-2" />
       </div>
       <div className="col-span-2">
-        <input placeholder='Subject' type="text" id="subject" name="subject" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green" />
+        <input placeholder='Subject' type="text" id="subject" name="subject" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green outline-2" />
       </div>
       <div className="col-span-2">
-        <textarea placeholder="Message" id="message" name="message" rows="6" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green"></textarea>
+        <textarea placeholder="Message" id="message" name="message" rows="6" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green outline-2"></textarea>
       </div>
       <div className="col-span-2 flex justify-between items-center">
       <button type="submit" className="bg-almost-black text-white text-center py-2 px-8 rounded-full leading-4 w-full block tracking-wider border-almost-black border hover:bg-almost-white hover:text-almost-black cursor-pointer w-max text-[0.85rem] mt-2">Submit</button>
