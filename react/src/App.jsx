@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import MenuIcon from './components/MenuIcon';
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
+  const [iconMenuVisible, setIconMenuVisible] = useState(true);
   
   useEffect(() => {
     // Функция, которая будет вызываться при изменении openMenu
@@ -29,14 +30,17 @@ function App() {
   function handleMenu() {
     setOpenMenu(!openMenu);
   }
+  function handleMenuIcon() {
+    setIconMenuVisible(!iconMenuVisible)
+  }
   return (
     <div className='page flex md:overflow-hidden'>
-    <MenuIcon handleMenu={handleMenu} openMenu={openMenu} />
+    {iconMenuVisible && <MenuIcon handleMenu={handleMenu} openMenu={openMenu} />}
     <Navbar openMenu={openMenu}/>
     <div className={`sections w-full md:h-screen flex flex-col gap-4 overflow-hidden md:flex-row transition-all duration-1000 ease-out ml-auto md:min-w-3/4 md:w-3/4 xxl:min-w-[85%] xxl:w-[85%]`}>
       <Home />
       <AboutMe />
-      <ProfessionalPath />
+      <ProfessionalPath handleMenuIcon={handleMenuIcon} />
       {/* <Portfolio /> */}
       <Contact />
       <Footer />

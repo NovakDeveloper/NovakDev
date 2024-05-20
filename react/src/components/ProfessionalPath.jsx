@@ -7,7 +7,7 @@ import Certifications from './Certifications';
 import Timelines from './Timelines';
 import Skills from './Skills';
 
-const ProfessionalPath = () => {
+const ProfessionalPath = ({handleMenuIcon}) => {
   const [selectedButton, setSelectedButton] = useState("Education/Work");
 
 const handleButtonClick = (buttonText) => {
@@ -27,7 +27,7 @@ const handleButtonClick = (buttonText) => {
               </div>
             <div className='bottom-part md:h-[75%]'>
               {selectedButton === "Education/Work" && <Timelines />}
-              {selectedButton === "Certifications" && <Certifications />}
+              {selectedButton === "Certifications" && <Certifications handleMenuIcon={handleMenuIcon} />}
               {selectedButton === "Skills" && <Skills />}
             </div>
             </div>

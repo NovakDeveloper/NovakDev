@@ -2,11 +2,12 @@ import React, {useState} from 'react';
 import CertificationCard from './CertificationCard';
 import Button from "./Button";
 import CertificationsAll from './CertificationsAll';
-const Certifications = () => {
+const Certifications = ({handleMenuIcon}) => {
   const [openAllCertifications, setOpenAllCertifications] = useState(false);
 
   const handleButtonClick = () => {
     setOpenAllCertifications(!openAllCertifications);
+    handleMenuIcon();
   };
   return (
     <>
