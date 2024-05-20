@@ -42,7 +42,7 @@ const CertificationsAll = ({openAllCertifications, onClick}) => {
       <div className='flex items-center max-md:flex-col justify-center md:gap-4 p-8'>
         <h1 className='text-h1-mobile md:text-h1'><span className='text-dark-green'>A</span>ll <span className='text-dark-green'>C</span>ertifications</h1>                
       </div>
-      <p className='text-x-large px-4'>Here, you can explore all the certifications I have acquired throughout my professional journey.</p>
+      <p className='text-x-large xxl:text-[1.875rem] leading-14 px-4'>Here, you can explore all the certifications I have acquired throughout my professional journey.</p>
       <div className={`wrapper h-full relative overflow-auto`}>
       <div className={`certifications w-full grid gap-4 sm:grid-cols-2 md:grid-cols-4 absolute top-0 left-0 p-4 md:p-8`}>
           <CertificationCard src={'src/images/certifications/Figma.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-2xl'} labels={"Figma, UI/UX Design"} />

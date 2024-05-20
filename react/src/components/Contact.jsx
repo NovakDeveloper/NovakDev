@@ -16,7 +16,7 @@ const Contact = () => {
             </div>
             </div>
             <div className='max-md:hidden flex mt-auto w-full'>
-              <PrevButton text="Portfolio" link="#portfolio" />
+              <PrevButton text="Professiontal Path" link="#professional-path" />
             </div>
           
     </div>
