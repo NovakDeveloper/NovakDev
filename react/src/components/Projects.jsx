@@ -1,28 +1,22 @@
-import React, {useState} from 'react';
-import CertificationCard from './CertificationCard';
-import ProjectCard from './ProjectCard';
-import Button from "./Button";
-import CertificationsAll from './CertificationsAll';
-const Projects = () => {
-  const [openAllCertifications, setOpenAllCertifications] = useState(false);
+import React, {useEffect} from 'react';
+import { gsap } from 'gsap';
 
-  const handleButtonClick = () => {
-    setOpenAllCertifications(!openAllCertifications);
-  };
+const Projects = () => {
+    useEffect(() => {
+      gsap.to(".soon-text", {
+        opacity: 0,
+        duration: 0.8,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
+      });
+    }, []);
   return (
     <>
-        <div className='flex items-center max-md:flex-col justify-center md:gap-4 mb-8'>
-          <h2 className='text-h2-mobile md:text-h2'><span className="text-dark-green">L</span>atest <span className="text-dark-green">P</span>rojects</h2>                
-          <Button text="All projects" onClick={handleButtonClick} customClasses={'text-[0.75rem]'} />
-              </div>
-      <p className='mb-4'>Here, you can explore my most recent projects, where I've primarily contributed as a frontend developer.<br />
-      Click on 'All Projects' to explore the full range of projects.</p>
-      <div className={`projects w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3`}>
-          <ProjectCard src={'src/images/projects/addnode.png'} objectFit={'contain'} customClasses={'ratio-video'} name="Addnode Group" link="https://addnodegroup.com/" />
-          <ProjectCard src={'src/images/projects/railcare.svg'} objectFit={'contain'} customClasses={'ratio-video'} name="Railcare" link="https://www.railcare.se/"/>
-          <ProjectCard src={'src/images/projects/alligo.svg'} objectFit={'contain'} customClasses={'ratio-video'} name="Alligo" link="https://www.alligo.com/" />
-      </div>
-      {openAllCertifications && <CertificationsAll openAllCertifications={openAllCertifications} onClick={handleButtonClick}/>}
+        <div className='flex items-center max-md:flex-col justify-center md:gap-4 mb-8 w-1/2 mx-auto'>
+        <p className="text-x-large xxl:text-[1.5rem] leading-14"><span className='text-dark-green font-bold'>I am currently working on my own projects</span>, and I will soon showcase them on this page so you can become more familiar with my skills.</p>
+        </div>
+        <span className="block text-[3rem] md:text-[5rem] font-medium text-dark-green/90 soon-text">Coming soon...</span>
       </>
   );
 };

@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <div className='md:w-3/4 mx-auto'>
      <h2 className='text-h2-mobile md:text-h2 mb-4'><span className="text-dark-green">A</span>ll <span className="text-dark-green">S</span>kills</h2>                
-        <p className='mb-8 text-x-large xxl:text-[1.875rem] leading-14'>Step into the realm of my expertise! Below, you'll find a visual showcase of the diverse languages, frameworks, and tools I've mastered.</p>
+        <p className='mb-8 text-x-large xxl:text-[1.5rem] leading-14'>Step into the realm of my expertise! Below, you'll find a visual showcase of the diverse languages, frameworks, and tools I've mastered.</p>
       <div className={`skills grid grid-cols-3 md:grid-cols-5 mb-6 gap-y-6`}>
             <Skill title="HTML" src="src/images/skills/html.svg" />
             <Skill title="CSS" src="src/images/skills/css.svg" />

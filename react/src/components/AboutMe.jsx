@@ -24,7 +24,7 @@ const AboutMe = () => {
                 <DownloadButton fileName="my resume" fileUrl="src/assets/CV/ValeriaNovak-CV.pdf" />
               </div>
             </div>
-            <div className='bottom-part md:h-[75%] text-x-large xxl:text-[1.875rem] leading-14'>
+            <div className='bottom-part md:h-[75%] text-x-large xxl:text-[1.5rem] leading-14'>
               <p>I am an Estonian Developer 🇪🇪 from the beautiful city of Tallinn, a place that inspires me to explore new possibilities and achievements. 🚀</p>
               <br />
               <p>I am proficient in three languages: English, Estonian, and Russian, allowing me to communicate and collaborate easily in a multinational environment.</p>

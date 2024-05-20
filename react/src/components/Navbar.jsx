@@ -15,7 +15,7 @@ const Navbar = ({openMenu}) => {
          <MenuButton link="#home" type="nav-button" text="Home"/>
          <MenuButton link="#about-me" type="nav-button" text="About me"/>
          <MenuButton link="#professional-path" type="nav-button" text="Professional path"/>
-         {/* <MenuButton link="#portfolio" type="nav-button" text="Portfolio"/> */}
+         <MenuButton link="#portfolio" type="nav-button" text="Portfolio"/>
          <MenuButton link="#contact-me" type="nav-button" text="Contact me"/>
         </div>
         <p className='max-md:hidden opacity-50 group-hover:opacity-100 transition all ease duration-300 mt-auto'>&copy; {currentDate} NovakDev. All rights reserved.</p>

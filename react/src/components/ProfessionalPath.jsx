@@ -34,7 +34,7 @@ const handleButtonClick = (buttonText) => {
             </div>
             <div className='max-md:hidden flex mt-auto w-full'>
               <PrevButton text="About me" link="#about-me" />
-              <NextButton text="Contact Me" link="#contact-me" />
+              <NextButton text="Portfolio" link="#portfolio" />
             </div>
           
     </div>

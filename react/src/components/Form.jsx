@@ -45,7 +45,7 @@ const ContactForm = () => {
   };
   return (
     <div className='md:w-3/4 m-auto'>
-    <p className='mb-8 text-x-large xxl:text-[1.875rem] leading-14'><span className='text-dark-green font-medium'>Ready to turn ideas into reality?</span> Let's collaborate and bring your vision to life. Contact me today to discuss your project and take the first step towards success.</p>
+    <p className='mb-8 text-x-large xxl:text-[1.5rem] leading-14'><span className='text-dark-green font-medium'>Ready to turn ideas into reality?</span> Let's collaborate and bring your vision to life. Contact me today to discuss your project and take the first step towards success.</p>
     <form ref={form} onSubmit={sendEmail} className="grid grid-cols-2 gap-4">
       <div className="col-span-2 md:col-span-1">
         <input type="text" placeholder='Name' id="name" name="name" className="w-full px-3 py-2 rounded-md outline outline-light-green focus:outline-dark-green outline-2" />
