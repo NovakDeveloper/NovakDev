@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import PrevButton from './PrevButton';
 import Form from "./Form";
-const Portfolio = () => {
+const Contact = () => {
   return ( 
     <div className='section h-full min-w-full w-full flex justify-start items-center m-auto flex-col px-4 md:px-8 max-md:py-8 md:min-h-[49rem] max-md:border-t max-md:rounded-3xl max-md:border-dark-green' id="contact-me">
             <div className="wrapper md:min-w-full md:w-full text-center flex-1 flex items-center">
@@ -23,4 +23,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Contact;

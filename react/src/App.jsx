@@ -4,7 +4,7 @@ import AboutMe from './components/AboutMe'
 import ProfessionalPath from "./components/ProfessionalPath";
 import Navbar from './components/Navbar'
 import Home from './components/Home'
-import Portfolio from './components/Portfolio';
+// import Portfolio from './components/Portfolio';
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import MenuIcon from './components/MenuIcon';
@@ -37,7 +37,7 @@ function App() {
       <Home />
       <AboutMe />
       <ProfessionalPath />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Contact />
       <Footer />
     </div>
