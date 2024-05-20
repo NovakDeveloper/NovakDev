@@ -32,7 +32,7 @@ const CertificationsAll = ({openAllCertifications, onClick}) => {
   return (openAllCertifications &&
     <div className='fixed top-0 left-0 w-full h-full p-4 md:p-16 z-10 bg-opacity-black' ref={certificationsRef}>
       <div className='wrapper bg-almost-white border border-dark-green rounded h-full overflow-hidden flex flex-col px-4 pb-8 md:px-8'>
-      <span onClick={handleCloseButtonClick} id="close-icon" className='absolute top-8 md:top-16 right-8 text-[2rem] border border-dark-green rounded-full bg-almost-white w-[3rem] h-[3rem] flex justify-center items-center cursor-pointer'>
+      <span onClick={handleCloseButtonClick} id="close-icon" className='absolute top-8 md:top-10 right-8 text-[2rem] border border-dark-green rounded-full bg-almost-white w-[3rem] h-[3rem] flex justify-center items-center cursor-pointer'>
       <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="Menu / Close_SM">
         <path id="Vector" d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

@@ -19,7 +19,7 @@ const AboutMe = () => {
             <div className="wrapper md:min-w-3/4 md:w-3/4 text-center flex-1 flex items-center">
             <div className="content w-full h-full">
             <div className='top-part md:h-[25%] flex flex-col justify-end'>
-              <div className='flex items-center max-md:flex-col justify-center md:gap-4 mb-8'>
+              <div className='flex items-center max-md:flex-col justify-center md:gap-4 mb-4'>
                 <h1 className='text-h1-mobile md:text-h1'><span className='text-dark-green font-medium'>A</span>bout <span className='text-dark-green font-medium'>M</span>e</h1>
                 <DownloadButton fileName="my resume" fileUrl="src/assets/CV/ValeriaNovak-CV.pdf" />
               </div>
