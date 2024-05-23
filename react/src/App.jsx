@@ -11,7 +11,14 @@ import MenuIcon from './components/MenuIcon';
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
   const [iconMenuVisible, setIconMenuVisible] = useState(true);
-  
+  const handleButtonClick = (event) => {
+    event.preventDefault(); // Отменяем стандартное поведение ссылки
+    const targetElementId = event.currentTarget.getAttribute('href'); // Получаем значение атрибута href
+    const targetElement = document.querySelector(targetElementId); // Находим элемент, к которому нужно прокрутить
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' }); // Прокручиваем до элемента с плавной анимацией
+    }
+  };
   useEffect(() => {
     // Функция, которая будет вызываться при изменении openMenu
     // Проверяем значение openMenu и добавляем/удаляем класс overflow-hidden у body
@@ -38,8 +45,8 @@ function App() {
     {iconMenuVisible && <MenuIcon handleMenu={handleMenu} openMenu={openMenu} />}
     <Navbar openMenu={openMenu}/>
     <div className={`sections w-full md:h-screen flex flex-col gap-4 overflow-hidden md:flex-row transition-all duration-1000 ease-out ml-auto md:min-w-3/4 md:w-3/4 xxl:min-w-[85%] xxl:w-[85%]`}>
-      <Home />
-      <AboutMe />
+      <Home handleButtonClick={handleButtonClick} />
+      <AboutMe handleButtonClick={handleButtonClick} />
       <ProfessionalPath handleMenuIcon={handleMenuIcon} />
       <Portfolio />
       <Contact />

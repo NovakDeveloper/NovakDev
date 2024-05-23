@@ -6,7 +6,7 @@ const Navbar = ({openMenu}) => {
   const currentDate = new Date().getFullYear();
   return (
     <>
-    <div className={`navbar ${openMenu ? 'opacity-100' : 'hidden max-md:opacity-0'} block transition duration-500 ease md:block bg-light-green transition-all duration-[1s] pt-16 pb-8 px-8 w-full min-w-full md:min-w-1/4 md:w-1/4 xxl:min-w-[15%] xxl:w-[15%] h-screen fixed group z-10 md:min-h-[49rem]`}>
+    <div className={`navbar ${openMenu ? 'opacity-100' : 'hidden max-md:opacity-0'} block transition duration-500 ease md:block md:bg-light-green transition-all duration-[1s] pt-16 pb-8 px-8 w-full min-w-full md:min-w-1/4 md:w-1/4 xxl:min-w-[15%] xxl:w-[15%] h-screen fixed group z-10 md:min-h-[49rem]`}>
       <div className={`content transition-all ease duration-1000 flex flex-col h-full relative`}>
       <Photo customClasses={'aspect-square w-3/4 sm:w-1/2 md:w-3/4 '}/>
         <h1 className="text-h2 text-dark-green mt-8 text-center mb-1">Valeria Novak</h1>

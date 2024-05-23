@@ -5,15 +5,7 @@ import PrevButton from './PrevButton';
 import Button from './Button';
 import DownloadButton from './DownloadButton';
 
-const AboutMe = () => {
-  const handleButtonClick = (event) => {
-    event.preventDefault(); // Отменяем стандартное поведение ссылки
-    const targetElementId = event.currentTarget.getAttribute('href'); // Получаем значение атрибута href
-    const targetElement = document.querySelector(targetElementId); // Находим элемент, к которому нужно прокрутить
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' }); // Прокручиваем до элемента с плавной анимацией
-    }
-  };
+const AboutMe = ({handleButtonClick}) => {
   return ( 
     <div className='section h-full min-w-full w-full flex justify-start items-center m-auto flex-col px-4 md:px-8 max-md:py-8 md:min-h-[49rem] max-md:border-y max-md:rounded-3xl max-md:border-dark-green' id="about-me">
             <div className="wrapper md:min-w-3/4 md:w-3/4 text-center flex-1 flex items-center">
