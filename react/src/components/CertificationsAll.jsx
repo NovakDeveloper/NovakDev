@@ -45,11 +45,11 @@ const CertificationsAll = ({openAllCertifications, onClick}) => {
       <p className='text-x-large xxl:text-[1.5rem] leading-14 px-4 pb-4'>Here, you can explore all the certifications I have acquired throughout my professional journey.</p>
       <div className={`wrapper h-full relative overflow-auto`}>
       <div className={`certifications w-full grid gap-4 sm:grid-cols-2 md:grid-cols-4 absolute top-0 left-0`}>
-          <CertificationCard src={'src/images/certifications/Figma.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-2xl'} labels={"Figma, UI/UX Design"} />
-          <CertificationCard src={'src/images/certifications/Wordpress.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-2xl'} labels={"PHP, Wordpress, SQL"}/>
-          <CertificationCard src={'src/images/certifications/CMS.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-2xl'} labels={"PHP, CMS, SQL"}/>
-          <CertificationCard src={'src/images/certifications/Tailwind.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-2xl'} labels={"CSS Framework: Tailwind"}/>
-          <CertificationCard src={'src/images/certifications/Sass.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-2xl'} labels={"Sass, SCSS"}/>
+          <CertificationCard src={'./certifications/Figma.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-2xl'} labels={"Figma, UI/UX Design"} />
+          <CertificationCard src={'./certifications/Wordpress.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-2xl'} labels={"PHP, Wordpress, SQL"}/>
+          <CertificationCard src={'./certifications/CMS.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-2xl'} labels={"PHP, CMS, SQL"}/>
+          <CertificationCard src={'./certifications/Tailwind.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-2xl'} labels={"CSS Framework: Tailwind"}/>
+          <CertificationCard src={'./certifications/Sass.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-2xl'} labels={"Sass, SCSS"}/>
       </div>
       </div>
       </div>

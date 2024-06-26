@@ -30,7 +30,7 @@ const NextButton = ({ link, text }) => {
   };
   return (
     <a 
-      className="next-button flex gap-4 justify-end px-16 py-8 items-center w-full text-2xl xxl:text-3xl text-dark-green mt-auto" 
+      className="next-button cursor-pointer flex gap-4 justify-end px-16 py-8 items-center w-full text-2xl xxl:text-3xl text-dark-green mt-auto" 
       href={link}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

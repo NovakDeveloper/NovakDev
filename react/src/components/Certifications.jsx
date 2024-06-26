@@ -17,9 +17,9 @@ const Certifications = ({handleMenuIcon}) => {
               </div>
       <p className='mb-8 text-x-large xxl:text-[1.5rem] leading-14'>Here, you can discover the three latest certifications I've attained on my professional journey.<br /> Click 'All Certifications' to explore my complete certification portfolio.</p>
       <div className={`certifications w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3 xxl:w-3/4 m-auto`}>
-          <CertificationCard src={'src/images/certifications/Figma.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-md'} labels={"Figma, UI/UX Design"} />
-          <CertificationCard src={'src/images/certifications/Wordpress.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-md'} labels={"PHP, Wordpress, SQL"}/>
-          <CertificationCard src={'src/images/certifications/CMS.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-md'} labels={"PHP, CMS, SQL"}/>
+          <CertificationCard src={'./certifications/Figma.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-md'} labels={"Figma, UI/UX Design"} />
+          <CertificationCard src={'./certifications/Wordpress.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-md'} labels={"PHP, Wordpress, SQL"}/>
+          <CertificationCard src={'./certifications/CMS.jpeg'} ratio='certification' objectFit={'contain'} customClasses={'flex-1 border border-light-green rounded-md'} labels={"PHP, CMS, SQL"}/>
       </div>
       {openAllCertifications && <CertificationsAll openAllCertifications={openAllCertifications} onClick={handleButtonClick}/>}
       </>

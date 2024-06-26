@@ -13,7 +13,7 @@ const AboutMe = ({handleButtonClick}) => {
             <div className='top-part md:h-[25%] flex flex-col justify-end'>
               <div className='flex items-center max-md:flex-col justify-center md:gap-4 mb-4'>
                 <h1 className='text-h1-mobile md:text-h1'><span className='text-dark-green font-medium'>A</span>bout <span className='text-dark-green font-medium'>M</span>e</h1>
-                <DownloadButton fileName="my resume" fileUrl="src/assets/CV/ValeriaNovak-CV.pdf" />
+                <DownloadButton fileName="my resume" fileUrl="./CV/ValeriaNovak-CV.pdf" />
               </div>
             </div>
             <div className='bottom-part md:h-[75%] text-x-large xxl:text-[1.5rem] leading-14'>
